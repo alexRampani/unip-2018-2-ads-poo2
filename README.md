@@ -10,16 +10,14 @@
 
 1. [Introdução](https://docs.google.com/presentation/d/1BMcPRjCDabpRqzP5OqMKSNjS2AQzif9AsX14OOhBxpA/edit?usp=sharing)
 1. Unified Modeling Language (UML)
-    1. Diagrama de Caso de Uso
     1. Diagrama de Classes
     1. Diagrama de Sequencias
 1. Padrões
-    1. MVC
-    1. DAO
-    1. Singleton
-    1. Strategy
+    1. Model View Controller (MVC)
+    1. Data Access Object (DAO)
+    1. Gang of Four (GoF)
 1. Frameworks e Bibliotecas
-
+    1. Spring
 
 ## Trabalhos
 
