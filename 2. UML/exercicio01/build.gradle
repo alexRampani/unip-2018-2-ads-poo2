@@ -1,0 +1,10 @@
+apply plugin: 'java-library'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	implementation group: 'br.com.caelum.stella', name: 'caelum-stella-core', version: '2.1.2'
+}
+
