@@ -64,10 +64,9 @@ public class ItemLeilao {
 		// TODO O campo "dataInicio" deve receber a data e hora atual.
 	}
 	
-	public boolean registrarLance(Lance lance) {
+	public void registrarLance(Lance lance) {
 		// TODO Se necessario, inicializar a lista de lances.
 		// TODO Adicionar Lance a lista (historico).
-		return true;
 	}
 	
 	public void finalizar() {
