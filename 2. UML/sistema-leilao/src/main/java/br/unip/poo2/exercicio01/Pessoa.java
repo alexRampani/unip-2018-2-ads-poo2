@@ -1,7 +1,7 @@
-package br.unip.poo2.exercicio01.model;
+package br.unip.poo2.exercicio01;
 
 public abstract class Pessoa {
-
+	
 	protected String nome;
 
 	public String getNome() {
@@ -11,5 +11,5 @@ public abstract class Pessoa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
+	
 }

@@ -1,21 +1,15 @@
-package br.unip.poo2.exercicio01.model;
+package br.unip.poo2.exercicio01;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 public class ItemLeilao {
 
 	private String nome;
-
 	private String descricao;
-
 	private double valorMinimo;
-
 	private LocalDateTime dataInicio;
-
 	private LocalDateTime dataFim;
-
 	private List<Lance> lances;
 
 	public String getNome() {
@@ -59,7 +53,6 @@ public class ItemLeilao {
 	}
 
 	public List<Lance> getLances() {
-
 		return lances;
 	}
 
@@ -68,32 +61,22 @@ public class ItemLeilao {
 	}
 
 	public void iniciar() {
-		this.dataInicio = LocalDateTime.now();
-		System.out.println(String.format("Item %s inciado às %s.", this.nome, this.dataInicio));
+		// TODO O campo "dataInicio" deve receber a data e hora atual.
 	}
-
-	public void registrarLance(Lance lance) {
-		if (lances == null) {
-			lances = new ArrayList<>();
-		}
-		lances.add(lance);
+	
+	public boolean registrarLance(Lance lance) {
+		// TODO Se necessario, inicializar a lista de lances.
+		// TODO Adicionar Lance a lista (historico).
+		return true;
 	}
-
+	
 	public void finalizar() {
-		this.dataFim = LocalDateTime.now();
-		System.out.println(String.format("Item %s finalizado às %s.", this.nome, this.dataFim));
+		// TODO O campo "dataFim" deve receber a data e hora atual.
 	}
-
+	
 	public Lance buscarLanceVencedor() {
-		Lance lanceVencedor = null;
-		if (lances != null) {
-			for (Lance lance : this.lances) {
-				if (lanceVencedor == null || lance.getValor() > lanceVencedor.getValor()) {
-					lanceVencedor = lance;
-				}
-			}
-		}
-		return lanceVencedor;
+		// TODO Caso existam lances, retornar o Lance de maior valor.
+		// TODO Caso contrario, retornar "null".
+		return null;
 	}
-
 }

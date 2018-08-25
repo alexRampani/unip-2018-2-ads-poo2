@@ -1,9 +1,7 @@
-package br.unip.poo2.exercicio01.model;
+package br.unip.poo2.exercicio01;
 
 public class Lance {
-
 	private Participante participante;
-
 	private double valor;
 
 	public Participante getParticipante() {
