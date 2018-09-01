@@ -1,4 +1,4 @@
-package br.unip.poo2.exercicio01;
+package br.unip.poo2.exercicio01.model;
 
 public class Leiloeiro extends Pessoa {
 
