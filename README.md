@@ -22,4 +22,4 @@
 
 ## Trabalhos
 
-TODO
+T1 - Criar o projeto base a partir dos diagramas UML desenvolvidos para o PIM. Considere incluir as dependências (via Gradle) que julgarem necessárias nesse primeiro momento. Cada grupo deve enviar o trabalho até o dia da NP1 (28/09/2018).
