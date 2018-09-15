@@ -39,7 +39,7 @@ public class Teste {
 		// Cria os Participantes para os Lances
 		Participante rafael = new Participante();
 		rafael.setNome("Rafael");
-		rafael.setCpf("968.652.720-64");
+		rafael.setCpf("968.652.720-61");
 		
 		Participante jorge = new Participante();
 		jorge.setNome("Jorge");
