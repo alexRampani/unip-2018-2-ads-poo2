@@ -13,10 +13,7 @@
     1. Diagrama de Classes
     1. Diagrama de Sequencias
 1. [Tratamento de Exceções](https://drive.google.com/open?id=1Ogwy_vCQZQgMLZ-LDYZLXbRDN3an3_Z3gWg6J90Hlss)
-1. Padrões
-    1. Model View Controller (MVC)
-    1. Data Access Object (DAO)
-    1. Gang of Four (GoF)
+1. [Padrões de Projeto](https://docs.google.com/presentation/d/1OwGrJ9WbFkZ5xymjt-3UsyyI7OYfVHoLYxII9JpFl7k/edit?usp=sharing)
 1. Frameworks e Bibliotecas
     1. Spring
 
