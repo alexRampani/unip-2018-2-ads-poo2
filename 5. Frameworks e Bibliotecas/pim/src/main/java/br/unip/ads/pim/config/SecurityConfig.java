@@ -16,12 +16,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+		// Configuracao do provider customizado de autenticacao
 		auth.authenticationProvider(authProvider);
 	}
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.csrf().disable()
-			.authorizeRequests().anyRequest().authenticated().and().httpBasic();
+		// Restringe acesso atravez do conceito Basic Authentication na API REST (HTTP)
+		http.authorizeRequests().antMatchers("/api/**").authenticated().and().httpBasic();
+		// Por simplicidade, desabilita o CSRF (Cross-Site Request Forgery)
+		http.csrf().disable();
 	}
 }
