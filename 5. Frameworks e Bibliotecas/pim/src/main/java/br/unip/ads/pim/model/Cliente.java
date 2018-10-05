@@ -1,15 +1,22 @@
 package br.unip.ads.pim.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 
 @Entity
 public class Cliente extends Usuario {
 
+	@Column
 	private String endereco;
+	@Column
 	private String bairro;
+	@Column
 	private String cidade;
+	@Column
 	private String estado;
+	@Column
 	private String cep;
+	@Column
 	private String telefone;
 
 	public String getEndereco() {

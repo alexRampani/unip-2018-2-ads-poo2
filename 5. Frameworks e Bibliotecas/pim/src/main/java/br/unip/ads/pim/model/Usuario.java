@@ -1,5 +1,6 @@
 package br.unip.ads.pim.model;
 
+import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -7,12 +8,15 @@ import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
 public abstract class Usuario {
-	
-    @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    private Long id;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	protected Long id;
+	@Column(nullable = false)
 	protected String nome;
+	@Column(nullable = false)
 	protected String email;
+	@Column(nullable = false)
 	protected String senha;
 
 	public Long getId() {
