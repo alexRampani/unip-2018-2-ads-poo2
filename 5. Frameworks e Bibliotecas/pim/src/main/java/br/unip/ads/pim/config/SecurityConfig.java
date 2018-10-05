@@ -6,6 +6,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
 
 @Configuration
 @EnableWebSecurity
@@ -22,7 +23,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		// Restringe acesso atravez do conceito Basic Authentication na API REST (HTTP)
+		// Atribui o conceito de Stateless (API REST livre de estado/sessao)
+		 http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+		// Restringe acesso atravez do conceito Basic Authentication na API REST
 		http.authorizeRequests().antMatchers("/api/**").authenticated().and().httpBasic();
 		// Por simplicidade, desabilita o CSRF (Cross-Site Request Forgery)
 		http.csrf().disable();
