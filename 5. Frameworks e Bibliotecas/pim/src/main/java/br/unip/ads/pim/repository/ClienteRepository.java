@@ -8,4 +8,5 @@ import br.unip.ads.pim.model.Cliente;
 @Repository
 public interface ClienteRepository extends CrudRepository<Cliente, Long> {
 
+	Cliente findByEmailAndSenha(String email, String senha);
 }

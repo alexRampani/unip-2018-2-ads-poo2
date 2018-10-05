@@ -14,7 +14,7 @@ public abstract class Usuario {
 	protected Long id;
 	@Column(nullable = false)
 	protected String nome;
-	@Column(nullable = false)
+	@Column(nullable = false, unique = true)
 	protected String email;
 	@Column(nullable = false)
 	protected String senha;

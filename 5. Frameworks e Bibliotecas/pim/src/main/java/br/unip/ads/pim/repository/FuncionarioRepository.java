@@ -8,4 +8,5 @@ import br.unip.ads.pim.model.Funcionario;
 @Repository
 public interface FuncionarioRepository extends CrudRepository<Funcionario, Long> {
 
+	Funcionario findByEmailAndSenha(String email, String senha);
 }
