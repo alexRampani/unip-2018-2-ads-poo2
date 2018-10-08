@@ -21,15 +21,15 @@ public class Chamado {
 	@Column
 	private String status;
 	@Column(nullable = false)
-	private LocalDateTime inicio;
+	private LocalDateTime inicio = LocalDateTime.now();
 	@Column
 	private LocalDateTime fim;
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
