@@ -18,6 +18,7 @@ public class SwaggerConfig {
 	public static final String TAG_CHAMADO = "Chamados";
 	public static final String TAG_CLIENTE = "Clientes";
 	public static final String TAG_FUNCIONARIO = "Funcionarios";
+	public static final String TAG_USUARIO = "Usuarios";
 
 	@Bean
 	public Docket productApi() {
@@ -28,7 +29,8 @@ public class SwaggerConfig {
 				.apiInfo(apiInfo())
 				.tags(new Tag(TAG_CHAMADO, "Operações relacionadas ao domínio de Chamados")
 					, new Tag(TAG_CLIENTE, "Operações relacionadas ao domínio de Clientes")
-					, new Tag(TAG_FUNCIONARIO, "Operações relacionadas ao domínio de Funcionarios"));
+					, new Tag(TAG_FUNCIONARIO, "Operações relacionadas ao domínio de Funcionarios")
+					, new Tag(TAG_USUARIO, "Operações relacionadas ao domínio de Usuarios"));
 	}
 
 	private ApiInfo apiInfo() {
