@@ -15,7 +15,3 @@
 1. [Tratamento de Exceções](https://drive.google.com/open?id=1Ogwy_vCQZQgMLZ-LDYZLXbRDN3an3_Z3gWg6J90Hlss)
 1. [Padrões de Projeto](https://docs.google.com/presentation/d/1OwGrJ9WbFkZ5xymjt-3UsyyI7OYfVHoLYxII9JpFl7k/edit?usp=sharing)
 1. [Frameworks e Bibliotecas](https://docs.google.com/presentation/d/1R8Mi7QUB3ZFghhAdQu1kfrXsjPaWnDhTCVEDu216K6M/edit?usp=sharing)
-
-## Trabalhos
-
-T1 - Criar o projeto base a partir dos diagramas UML desenvolvidos para o PIM. Considere incluir as dependências (via Gradle) que julgarem necessárias nesse primeiro momento. Cada grupo deve enviar o trabalho até o dia da NP1 (28/09/2018).
